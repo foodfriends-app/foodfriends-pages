@@ -41,6 +41,30 @@
     </div>
   </div>
   <div class="footer">&copy; 2026 FoodFriends — Partage un repas, fais-toi des amis</div>
+  <script>
+    // Les liens des mails Supabase arrivent ici avec des infos après le # :
+    //  - lien « Mot de passe oublié » (type=recovery) envoyé par une ancienne version de l'appli
+    //    (sans redirectTo) → on l'envoie sur la page Nouveau mot de passe, en gardant le jeton ;
+    //  - lien expiré ou déjà utilisé (error=...) → on le dit, au lieu d'afficher « Email confirmé ».
+    (function () {
+      var h = new URLSearchParams(location.hash.replace(/^#/, ''));
+      if (h.get('type') === 'recovery' && h.get('access_token')) {
+        location.replace('reset-password.html' + location.hash);
+        return;
+      }
+      if (h.get('error') || h.get('error_code')) {
+        var en = (navigator.language || '').toLowerCase().indexOf('en') === 0;
+        document.title = 'FoodFriends';
+        document.querySelector('.check-icon').outerHTML = '<div style="font-size:56px">⏳</div>';
+        document.querySelector('.card h2').textContent = en ? 'This link is no longer valid' : "Ce lien n'est plus valable";
+        document.querySelector('.card p').textContent = en
+          ? 'It has expired or was already used. Request a new one from the FoodFriends app.'
+          : "Il a expiré ou a déjà servi. Redemande un nouveau lien depuis l'appli FoodFriends.";
+        document.querySelector('.hints').style.display = 'none';
+        history.replaceState(null, '', location.pathname);
+      }
+    })();
+  </script>
 </body>
 </html>
 
