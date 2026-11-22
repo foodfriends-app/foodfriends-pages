@@ -1,128 +1,97 @@
 <!DOCTYPE html>
-  <html lang="fr">
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Politique de confidentialité — FoodFriends</title>
-  <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 700px; margin: 60px auto;
-  padding: 20px; color: #2a2a2a; line-height: 1.6; background: #f8f6f4; }
-  h1, h2 { color: #FF6B35; }
-  h1 { font-size: 26px; }
-  h2 { font-size: 18px; margin-top: 28px; }
-  a { color: #FF6B35; }
-  ul { padding-left: 20px; }
-  .updated { font-style: italic; color: #888; margin-top: 32px; font-size: 14px; }
-  </style>
-  </head>
-  <body>
-<p style="margin:0 0 24px;font-size:14px"><a href="https://foodfriends.app/">&larr; FoodFriends : accueil</a></p>
-  <h1>Politique de confidentialité</h1>
-
-  <h2>Qui est responsable ?</h2>
-  <p>Un développeur indépendant édite FoodFriends.<br>Contact : <a
-  href="mailto:contact@foodfriends.app">contact@foodfriends.app</a></p>
-
-  <h2>Quelles données sont collectées ?</h2>
-  <p>Selon ton usage :</p>
-  <ul>
-  <li>Prénom, nom, email, photo de profil</li>
-  <li>Ville, bio, centres d'intérêt, profession</li>
-  <li>Genre, âge, date de naissance (vérification 18+)</li>
-  <li>Préférences alimentaires</li>
-  <li>Invitations, candidatures, messages, avis (et photos d'avis)</li>
-  <li>Géolocalisation approximative (sur consentement)</li>
-  <li>Token de notification push</li>
-  <li>Données techniques (connexions, appareil, adresse IP)</li>
-  </ul>
-
-  <h2>Pour quoi ?</h2>
-  <ul>
-  <li>Faire fonctionner l'app et la mise en relation</li>
-  <li>Gérer les invitations et les matchs</li>
-  <li>Envoyer les notifications</li>
-  <li>Modérer les contenus</li>
-  <li>Calculer le score de fiabilité</li>
-  <li>Sécurité (anti-fraude, anti-spam)</li>
-  <li>Améliorer le service</li>
-  </ul>
-
-  <h2>Bases légales (RGPD)</h2>
-  <ul>
-  <li>Exécution du contrat (compte, profil, mise en relation)</li>
-  <li>Consentement (géolocalisation, notifications)</li>
-  <li>Intérêt légitime (modération, sécurité)</li>
-  <li>Obligation légale (autorités si requis)</li>
-  </ul>
-
-  <h2>Minimisation</h2>
-  <p>Seulement les données strictement nécessaires.<br>Pas de vente de données. Pas de publicité ciblée. Pas de
-  tracking marketing.</p>
-
-  <h2>Géolocalisation</h2>
-  <p>Consentement obligatoire. Utilisée pour la carte et pour confirmer ta présence au restaurant (rayon 50m).
-  Tu peux la désactiver dans les paramètres de l'appareil.</p>
-
-  <h2>Partage des données — Sous-traitants</h2>
-  <ul>
-  <li>Supabase (hébergement BDD, auth, storage) — serveurs UE (Frankfurt)</li>
-  <li>Resend (envoi des emails) — UE / US</li>
-  <li>Apple (Sign in with Apple, notifications APNS) — US</li>
-  <li>Google (Sign in with Google, notifications FCM Android) — US</li>
-  <li>Apple Maps (carte iOS), OpenStreetMap / CartoDB (carte Android)</li>
-  <li>Expo / EAS (mises à jour OTA, push relay) — US</li>
-  <li>Autorités si obligation légale</li>
-  </ul>
-
-  <h2>Transferts hors UE</h2>
-  <p>Certains sous-traitants sont situés aux États-Unis (Apple, Google, Resend, Expo). Ces transferts sont
-  encadrés par les Clauses Contractuelles Types (CCT) de la Commission européenne, conformément au RGPD.</p>
-
-  <h2>Conservation</h2>
-  <ul>
-  <li>Données de compte : jusqu'à suppression du compte</li>
-  <li>Messages : durée nécessaire à la conversation</li>
-  <li>Logs techniques : durée limitée pour la sécurité</li>
-  <li>Suppression du compte : anonymisation des avis et effacement des données personnelles via la fonction
-  "Supprimer mon compte" (menu ☰ → Paramètres, voir <a href="delete-account.html">cette page</a>). Certaines données peuvent être conservées pour obligation
-  légale.</li>
-  </ul>
-
-  <h2>Tes droits</h2>
-  <ul>
-  <li>Accès à tes données</li>
-  <li>Rectification</li>
-  <li>Effacement (suppression de compte direct dans l'app)</li>
-  <li>Opposition</li>
-  <li>Portabilité (export sur demande)</li>
-  <li>Définir des directives post-mortem</li>
-  </ul>
-
-  <p>Comment exercer tes droits ? Écris à <a
-  href="mailto:contact@foodfriends.app">contact@foodfriends.app</a></p>
-
-  <h2>Sécurité</h2>
-  <ul>
-  <li>Row Level Security sur toutes les tables Supabase</li>
-  <li>Mots de passe hachés</li>
-  <li>Storage limité aux images (10 Mo max)</li>
-  <li>Rate limiting sur les actions sensibles</li>
-  <li>Modération active</li>
-  </ul>
-
-  <h2>Cookies / traceurs</h2>
-  <p>Pas de cookies tiers. Pas de tracking publicitaire.<br>Stockage local (AsyncStorage) uniquement pour le bon
-   fonctionnement de l'app (session, préférences, acceptation CGU).</p>
-
-  <h2>Mises à jour</h2>
-  <p>Cette politique peut évoluer. Les utilisateurs seront informés des changements importants.</p>
-
-  <h2>Réclamation</h2>
-  <p>Si tu estimes que tes droits ne sont pas respectés, tu peux saisir la CNIL : <a
-  href="https://www.cnil.fr">www.cnil.fr</a></p>
-
-  <p>En utilisant FoodFriends, tu acceptes cette politique.</p>
-
-  <p class="updated">Dernière mise à jour : mai 2026</p>
-  </body>
-  </html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Politique de confidentialité - FoodFriends</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; max-width: 700px; margin: 60px auto; padding: 20px;
+ color: #2a2a2a; line-height: 1.6; background: #f8f6f4; }
+h1 { color: #FF6B35; }
+h2 { margin-top: 28px; font-size: 1.15em; }
+a { color: #FF6B35; }
+hr { border: none; border-top: 1px solid #ddd; margin: 48px 0; }
+</style>
+</head>
+<body>
+<p style="margin:0 0 24px;font-size:14px"><a href="https://foodfriends.app/">&larr; FoodFriends : accueil</a> · <a href="#en">English version</a></p>
+<h1>Politique de confidentialité</h1>
+<h2>Qui est responsable ?</h2>
+<p>FoodFriends est édité par un particulier, à titre non professionnel, qui a choisi de rester anonyme (loi n° 2004-575 du 21 juin 2004, article 6-III-2) : son identité a été communiquée à l'hébergeur.</p>
+<p>Contact : <a href="mailto:contact@foodfriends.app">contact@foodfriends.app</a></p>
+<h2>Quelles données sont collectées ?</h2>
+<p>Selon ton usage :</p>
+<ul><li>Prénom, nom, email, photo de profil</li><li>Ville, bio, centres d'intérêt, profession</li><li>Genre, âge, date de naissance (vérification 18+)</li><li>Préférences alimentaires</li><li>Invitations, candidatures, messages, avis (et photos d'avis)</li><li>Géolocalisation approximative (sur consentement)</li><li>Token de notification push</li><li>Retours que tu nous envoies depuis l'app (avec ton nom et ton e-mail, pour pouvoir te répondre)</li><li>Rapports de plantage de l'app (identifiant technique du compte, modèle d'appareil, version, description de l'erreur — jamais ton nom, ton e-mail ni ton adresse IP)</li><li>Données techniques (connexions, appareil, adresse IP)</li></ul>
+<h2>Pour quoi ?</h2>
+<ul><li>Faire fonctionner l'app et la mise en relation</li><li>Gérer les invitations et les matchs</li><li>Envoyer les notifications</li><li>Modérer les contenus</li><li>Calculer le score de fiabilité</li><li>Sécurité (anti-fraude, anti-spam)</li><li>Améliorer le service</li></ul>
+<h2>Bases légales (RGPD)</h2>
+<ul><li>Exécution du contrat (compte, profil, mise en relation)</li><li>Consentement (géolocalisation, notifications)</li><li>Intérêt légitime (modération, sécurité)</li><li>Obligation légale (autorités si requis)</li></ul>
+<h2>Minimisation</h2>
+<p>Seulement les données strictement nécessaires.</p>
+<p>Pas de vente de données. Pas de publicité ciblée. Pas de tracking marketing.</p>
+<h2>Géolocalisation</h2>
+<p>Consentement obligatoire. Utilisée pour la carte et pour confirmer ta présence au restaurant (rayon 50m). Pour la présence, seule l'heure de confirmation est enregistrée, jamais ta position. Tu peux la désactiver dans les paramètres de l'appareil.</p>
+<h2>Partage des données — Sous-traitants</h2>
+<ul><li>Supabase (hébergement BDD, auth, storage) — serveurs UE (Frankfurt)</li><li>Resend (envoi des emails, dont les retours transmis à notre boîte contact@) — UE / US</li><li>Namecheap Private Email (boîte de réception <a href="mailto:contact@foodfriends.app">contact@foodfriends.app</a>) — US</li><li>Sentry (rapports de plantage, identifiant technique seulement) — serveurs UE (Allemagne)</li><li>Apple (Sign in with Apple, notifications APNS) — US</li><li>Google (Sign in with Google, notifications FCM Android) — US</li><li>Apple Maps (carte iOS), OpenStreetMap / CartoDB (carte Android), OpenStreetMap Nominatim (recherche de villes et d'adresses)</li><li>Expo / EAS (mises à jour OTA, push relay) — US</li><li>GitHub (hébergement des pages web foodfriends.app, adresse IP des visiteurs) et jsDelivr (fichier technique de la page « Nouveau mot de passe ») — US</li><li>Autorités si obligation légale</li></ul>
+<h2>Transferts hors UE</h2>
+<p>Certains sous-traitants sont situés aux États-Unis (Apple, Google, Resend, Namecheap, Expo, GitHub, jsDelivr). Ces transferts sont encadrés par les Clauses Contractuelles Types (CCT) de la Commission européenne ou par le cadre de protection des données UE–États-Unis, conformément au RGPD.</p>
+<h2>Conservation</h2>
+<ul><li>Données de compte, profil, messages, amis et avis : jusqu'à la suppression du compte</li><li>Invitations sans convive : supprimées automatiquement après l'heure du repas</li><li>Candidatures marquées « absent » : supprimées après 72 heures</li><li>Rapports de plantage (Sentry) : 90 jours maximum</li><li>Journaux techniques du serveur : quelques jours</li><li>Retours reçus par e-mail : le temps de traiter ta demande, 3 ans maximum</li><li>Suppression du compte : anonymisation des avis et effacement des données personnelles via la fonction "Supprimer mon compte" (menu ☰ → Paramètres). Certaines données peuvent être conservées pour obligation légale.</li></ul>
+<h2>Tes droits</h2>
+<ul><li>Accès à tes données</li><li>Rectification</li><li>Effacement (suppression de compte direct dans l'app)</li><li>Opposition</li><li>Portabilité (export sur demande)</li><li>Définir des directives post-mortem</li></ul>
+<p>Comment exercer tes droits ? Écris à <a href="mailto:contact@foodfriends.app">contact@foodfriends.app</a></p>
+<h2>Sécurité</h2>
+<ul><li>Row Level Security sur toutes les tables Supabase</li><li>Mots de passe hachés</li><li>Storage limité aux images (10 Mo max)</li><li>Rate limiting sur les actions sensibles</li><li>Modération active</li></ul>
+<h2>Cookies / traceurs</h2>
+<p>Pas de cookies tiers. Pas de tracking publicitaire.</p>
+<p>Stockage local (AsyncStorage) uniquement pour le bon fonctionnement de l'app (session, préférences, acceptation CGU).</p>
+<h2>Mises à jour</h2>
+<p>Cette politique peut évoluer. Les utilisateurs seront informés des changements importants.</p>
+<h2>Réclamation</h2>
+<p>Si tu estimes que tes droits ne sont pas respectés, tu peux saisir la CNIL : <a href="https://www.cnil.fr">www.cnil.fr</a></p>
+<p>En utilisant FoodFriends, tu acceptes cette politique.</p>
+<p>Dernière mise à jour : 22 novembre 2026</p>
+<p>Voir aussi : <a href="cgu.html">conditions d'utilisation</a> · <a href="delete-account.html">supprimer mon compte</a> · <a href="child-safety.html">sécurité des enfants</a></p>
+<hr>
+<div lang="en" id="en">
+<h1>Privacy policy</h1>
+<h2>Who is responsible?</h2>
+<p>FoodFriends is published by a private individual, on a non-professional basis, who has chosen to remain anonymous (French law no. 2004-575 of 21 June 2004, article 6-III-2): their identity has been provided to the host.</p>
+<p>Contact: <a href="mailto:contact@foodfriends.app">contact@foodfriends.app</a></p>
+<p>This is an English translation provided for convenience. In case of any difference, the French version prevails.</p>
+<h2>What data is collected?</h2>
+<p>Depending on how you use the app:</p>
+<ul><li>First name, last name, email, profile photo</li><li>City, bio, interests, job</li><li>Gender, age, date of birth (18+ check)</li><li>Food preferences</li><li>Invitations, applications, messages, reviews (and review photos)</li><li>Approximate location (with your consent)</li><li>Push notification token</li><li>Feedback you send us from the app (with your name and email, so we can reply)</li><li>App crash reports (technical account ID, device model, version, error description — never your name, email or IP address)</li><li>Technical data (logins, device, IP address)</li></ul>
+<h2>What for?</h2>
+<ul><li>Running the app and connecting people</li><li>Managing invitations and matches</li><li>Sending notifications</li><li>Moderating content</li><li>Calculating the reliability score</li><li>Security (anti-fraud, anti-spam)</li><li>Improving the service</li></ul>
+<h2>Legal bases (GDPR)</h2>
+<ul><li>Performance of the contract (account, profile, connecting people)</li><li>Consent (location, notifications)</li><li>Legitimate interest (moderation, security)</li><li>Legal obligation (authorities if required)</li></ul>
+<h2>Data minimization</h2>
+<p>Only strictly necessary data.</p>
+<p>No data sales. No targeted advertising. No marketing tracking.</p>
+<h2>Location</h2>
+<p>Consent required. Used for the map and to confirm you're at the restaurant (50m radius). For attendance, only the confirmation time is stored, never your location. You can turn it off in your device settings.</p>
+<h2>Data sharing — Processors</h2>
+<ul><li>Supabase (database hosting, auth, storage) — EU servers (Frankfurt)</li><li>Resend (sending emails, including feedback forwarded to our contact@ inbox) — EU / US</li><li>Namecheap Private Email (<a href="mailto:contact@foodfriends.app">contact@foodfriends.app</a> inbox) — US</li><li>Sentry (crash reports, technical ID only) — EU servers (Germany)</li><li>Apple (Sign in with Apple, APNS notifications) — US</li><li>Google (Sign in with Google, Android FCM notifications) — US</li><li>Apple Maps (iOS map), OpenStreetMap / CartoDB (Android map), OpenStreetMap Nominatim (city and address search)</li><li>Expo / EAS (OTA updates, push relay) — US</li><li>GitHub (hosting of the foodfriends.app web pages, visitors' IP address) and jsDelivr (technical file for the "New password" page) — US</li><li>Authorities if legally required</li></ul>
+<h2>Transfers outside the EU</h2>
+<p>Some processors are located in the United States (Apple, Google, Resend, Namecheap, Expo, GitHub, jsDelivr). These transfers are governed by the European Commission's Standard Contractual Clauses (SCCs) or the EU–US Data Privacy Framework, in accordance with the GDPR.</p>
+<h2>Retention</h2>
+<ul><li>Account data, profile, messages, friends and reviews: until the account is deleted</li><li>Invitations without a guest: deleted automatically after the meal time</li><li>Applications marked "no-show": deleted after 72 hours</li><li>Crash reports (Sentry): 90 days maximum</li><li>Server technical logs: a few days</li><li>Feedback received by email: as long as needed to handle your request, 3 years maximum</li><li>Account deletion: reviews are anonymized and personal data erased via the "Delete my account" feature (☰ menu → Settings). Some data may be kept for legal obligations.</li></ul>
+<h2>Your rights</h2>
+<ul><li>Access to your data</li><li>Rectification</li><li>Erasure (account deletion directly in the app)</li><li>Objection</li><li>Portability (export on request)</li><li>Setting post-mortem instructions</li></ul>
+<p>How to exercise your rights? Write to <a href="mailto:contact@foodfriends.app">contact@foodfriends.app</a></p>
+<h2>Security</h2>
+<ul><li>Row Level Security on all Supabase tables</li><li>Hashed passwords</li><li>Storage limited to images (10 MB max)</li><li>Rate limiting on sensitive actions</li><li>Active moderation</li></ul>
+<h2>Cookies / trackers</h2>
+<p>No third-party cookies. No advertising tracking.</p>
+<p>Local storage (AsyncStorage) only for the app to work properly (session, preferences, acceptance of the Terms).</p>
+<h2>Updates</h2>
+<p>This policy may change. Users will be informed of significant changes.</p>
+<h2>Complaints</h2>
+<p>If you believe your rights are not respected, you can contact the CNIL (French data protection authority): <a href="https://www.cnil.fr">www.cnil.fr</a></p>
+<p>By using FoodFriends, you accept this policy.</p>
+<p>Last updated: 22 November 2026</p>
+<p>See also: <a href="cgu.html">terms of use</a> · <a href="delete-account.html">delete my account</a> · <a href="child-safety.html">child safety</a></p>
+</div>
+</body>
+</html>
